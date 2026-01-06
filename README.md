@@ -8,7 +8,7 @@ time-independent Schrödinger equation for the one-dimensional quantum
 harmonic oscillator. Numerical eigenvalues and eigenfunctions are
 computed and validated against analytic solutions.
 
-|This work is intended as an exploratory computational study to develop numerical |intuition for quantum eigenvalue problems, rather than as a complete or novel |theoretical contribution.
+|This work is intended as an exploratory computational study to develop numerical intuition for quantum eigenvalue problems, rather than as a complete or novel theoretical contribution.|
 
 
 We consider a particle of mass m in a harmonic potential
