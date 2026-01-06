@@ -43,7 +43,8 @@ with natural units ℏ = 1 and ω = 1.
 
 The relative error increases gradually with quantum number, as expected due to finite grid resolution. Parity checks confirm that the ground state is even and the first excited state is odd.
 
-<img width="563" height="453" alt="unknown" src="https://github.com/user-attachments/assets/12171900-167e-414d-97d4-42e3edf639ec" />
+<img width="443" height="222" alt="image" src="https://github.com/user-attachments/assets/0db78b08-25ca-46cd-810c-daf905c8eb29" />
+
 
 The expectation values and uncertainties were computed numerically for the
 first ten stationary states in natural units (ℏ = 1). Due to the symmetry of
