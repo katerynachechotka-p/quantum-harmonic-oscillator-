@@ -50,7 +50,54 @@ assert np.allclose(H, H.T)
 
 
 
+#Part 2 -  Eigenvalues problem
 
+
+eigvals, eigvecs = np.linalg.eigh(H)
+
+assert np.all(np.diff(eigvals) >= 0)
+
+n_states = 10
+energies = eigvals[:n_states]
+states = eigvecs[:, :n_states]   # shape: (N, 10)
+
+for n in range(n_states):
+    psi = states[:, n]
+    norm = np.sqrt(np.sum(np.abs(psi)**2) * dx)
+    states[:, n] = psi / norm
+
+
+
+print("First 10 energy eigenvalues:")
+for n in range(10):
+    print(f"n = {n:2d}   E_num = {eigvals[n]:.6f}")
+
+
+print("\nComparison with analytic energies:")
+print(" n    E_num      E_ana      rel_error")
+print("---------------------------------------")
+
+for n in range(10):
+    E_num = eigvals[n]
+    E_ana = n + 0.5
+    rel_err = abs(E_num - E_ana) / E_ana
+    print(f"{n:2d}  {E_num:9.6f}  {E_ana:9.6f}  {rel_err:9.2e}")
+
+print("\nGrid parameters:")
+print(f"L = {L}")
+print(f"N = {N}")
+print(f"dx = {dx:.6f}")
+
+
+psi0 = states[:, 0]
+psi1 = states[:, 1]
+
+even_check = np.allclose(psi0, psi0[::-1], atol=1e-2)
+odd_check  = np.allclose(psi1, -psi1[::-1], atol=1e-2)
+
+print("\nParity checks:")
+print("Ground state even:", even_check)
+print("First excited odd:", odd_check)
 
 
 
