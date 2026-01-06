@@ -28,7 +28,11 @@ numerically to obtain energy eigenvalues and eigenfunctions.
 
 
 Output:
+
+
 <img width="357" height="534" alt="image" src="https://github.com/user-attachments/assets/2822701b-1e76-4aa7-baaa-1267f2affe6f" />
+
+
 
 Numerical results reproduce analytic energies and symmetry properties of the quantum harmonic oscilator, validating the implemented finite-difference approach. 
 Energies of the analytic method chosen for comparison and approach validation were computed using the following formula: 
