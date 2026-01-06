@@ -1,6 +1,6 @@
 # quantum-harmonic-oscillator-
 
-##Numerical solution of the 1D QHO using finite differences approach
+# Numerical solution of the 1D QHO using finite differences approach
 
 
 This project implements a finite-difference numerical solution of the
