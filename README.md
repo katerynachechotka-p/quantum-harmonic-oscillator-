@@ -43,7 +43,14 @@ with natural units ℏ = 1 and ω = 1.
 
 The relative error increases gradually with quantum number, as expected due to finite grid resolution. Parity checks confirm that the ground state is even and the first excited state is odd.
 
+<img width="563" height="453" alt="unknown" src="https://github.com/user-attachments/assets/12171900-167e-414d-97d4-42e3edf639ec" />
 
+The expectation values and uncertainties were computed numerically for the
+first ten stationary states in natural units (ℏ = 1). Due to the symmetry of
+the harmonic potential, ⟨x⟩ and ⟨p⟩ vanish for all eigenstates. The ground
+state saturates the Heisenberg uncertainty bound (ΔxΔp ≈ 0.5), while higher
+energy states exhibit increasing uncertainties, consistent with analytic
+predictions for the quantum harmonic oscillator.
 
 
 # Repository Structure
