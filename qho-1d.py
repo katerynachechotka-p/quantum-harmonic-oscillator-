@@ -3,9 +3,6 @@ import matplotlib.pyplot as plt
 from scipy.linalg import eigh
 
 
-
-#Part 1
-
 #Building the numerical Hamiltonian: H = T (kinetic energy) +  V (potential energy)
 
 
