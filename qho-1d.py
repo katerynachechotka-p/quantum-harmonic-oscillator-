@@ -47,7 +47,7 @@ assert np.allclose(H, H.T)
 
 
 
-#Part 2 -  Eigenvalues problem
+#Eigenvalues problem
 
 
 eigvals, eigvecs = np.linalg.eigh(H)
