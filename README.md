@@ -5,10 +5,14 @@
 
 This project implements a finite-difference numerical solution of the
 time-independent Schrödinger equation for the one-dimensional quantum
-harmonic oscillator. Numerical eigenvalues and eigenfunctions are
+harmonic oscillator, with an extension to the anharmonic case to investigate
+where perturbative approximations break down. Numerical eigenvalues and eigenfunctions are
 computed and validated against analytic solutions.
 
 |This work is intended as an exploratory computational study to develop numerical intuition for quantum eigenvalue problems, rather than as a complete or novel theoretical contribution.|
+
+
+# Harmonic oscillator
 
 
 We consider a particle of mass m in a harmonic potential
@@ -56,11 +60,35 @@ state saturates the Heisenberg uncertainty bound (ΔxΔp ≈ 0.5), while higher
 energy states exhibit increasing uncertainties, consistent with analytic
 predictions for the quantum harmonic oscillator.
 
+# Anharmonic oscillator
+
+The anharmonic oscillator extends this analysis by adding a quartic perturbation:
+V(x) = ½x² + λx⁴
+This extension investigates where first-order perturbation theory breaks down
+and numerical methods become necessary. According to perturbation theory, the
+energy correction is:
+E_n ≈ E_n^(0) + ⟨ψ_n|λx⁴|ψ_n⟩
+where ψ_n are the unperturbed (harmonic) eigenstates.
+
+Results
+ + add table
+Key finding: For λ ≥ 0.05, perturbation theory error exceeds 1%, indicating
+the breakdown of perturbative approximations. At λ = 0.1, the relative error
+reaches ~3%, demonstrating that numerical diagonalization becomes essential
+in the strongly anharmonic regime.
+Physical Significance
+This transition from perturbative to non-perturbative regimes is fundamental
+in quantum field theory. The breakdown observed here is analogous to:
+
+QCD at low energies: Perturbative QCD fails → Lattice QCD required
+Many-body systems: Weak coupling approximations fail → numerical methods necessary
+
 
 # Repository Structure
-- `qho.py` – main solver
-- `plots/` – eigenfunction and probability density plots
-- `report.pdf` – short project report
+- `qho.py` - main solver
+- `anharmonic_extension.py` - anharmonic oscillator with perturbation theory comparison
+- `plots/` - eigenfunction and probability density plots
+- `report.pdf` - short project report
 
 
 
