@@ -40,7 +40,7 @@ First-order perturbation theory prediction: E₀ ≈ E₀⁽⁰⁾ + ⟨ψ₀|λ
 1%). At λ = 0.1, relative error reaches 2.83%, demonstrating that numerical 
 diagonalization becomes essential in the strongly anharmonic regime.
 
-![Anharmonic Analysis](plots/anharmonic_analysis.png)
+![Anharmonic Analysis](figures/anharmonic_analysis.png)
 
 **Physical significance:** This perturbative breakdown is directly analogous 
 to failure of perturbative QCD at low energies (requiring Lattice QCD) and 
