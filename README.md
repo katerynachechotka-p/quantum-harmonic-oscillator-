@@ -48,7 +48,9 @@ breakdown of weak-coupling approximations in quantum many-body systems.
 
 ## Repository Structure
 qho.py - #main QHO solver
+
 anharmonic_extension.py #anharmonic extension + perturbation theory
+
 plots/ #all output figures
 
 
